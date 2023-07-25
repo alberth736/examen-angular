@@ -1,0 +1,20 @@
+/* Estilos para la tabla de usuarios */
+
+/* Estilos para las celdas de la tabla */
+td.mat-cell {
+  padding: 8px; /* Espaciado interno para las celdas */
+  text-align: center; /* Alineación del texto al centro */
+}
+
+/* Estilos para la foto del usuario */
+img.user-image {
+  width: 50px; /* Ancho de la imagen */
+  height: 50px; /* Altura de la imagen */
+  border-radius: 50%; /* Hacemos la imagen circular */
+  object-fit: cover; /* Ajustamos la imagen para que cubra el círculo */
+}
+
+/* Estilos para el encabezado de la tabla */
+th.mat-header-cell {
+  text-align: center; /* Alineación del texto al centro */
+}

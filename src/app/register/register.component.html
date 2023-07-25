@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="login-box">
+    <h2>Registrarse</h2>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Usuario" [(ngModel)]="username" />
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" placeholder="Contraseña" [(ngModel)]="password" />
+    </div>
+    <!-- Botón de registro -->
+    <button class="btn-login" [disabled]="!(username && password)" (click)="register()">Registrarse</button>
+    <!-- Volver al inicio de sesión -->
+    <p class="login-text">¿Ya tienes cuenta? <a (click)="goToLogin()">Iniciar Sesión</a></p>
+    <button class="btn-facebook">
+      <mat-icon class="facebook-icon">facebook</mat-icon> Registrate con Facebook
+    </button>
+    <button class="btn-google">
+      <mat-icon class="google-icon">google</mat-icon> Registrate con Google
+    </button>
+  </div>
+</div>
